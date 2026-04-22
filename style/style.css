@@ -2009,6 +2009,7 @@ h1.catalog-title {
   display: grid;
   -ms-grid-columns: 40px 1fr 40px;
   grid-template-columns: 40px 1fr 40px;
+  position: relative;
 }
 
 .count-controls button,
@@ -2021,10 +2022,6 @@ h1.catalog-title {
   grid-column: 1;
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 .increase {
@@ -2032,39 +2029,35 @@ h1.catalog-title {
   grid-column-end: -1;
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-grid-row-align: center;
-  align-self: center;
 }
 
 .decrease,
 .increase {
-  background-color: #f2f2f2;
   position: relative;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   border-radius: 4px;
   cursor: pointer;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .decrease svg,
 .increase svg {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   fill: rgba(117, 97, 87, 0.3);
-  z-index: 2;
 }
 
 .decrease:hover svg,
 .decrease:focus-visible svg,
 .increase:hover svg,
 .increase:focus-visible svg {
-  fill: #000000;
+  fill: #000;
 }
 
 .decrease:active svg,
@@ -2076,9 +2069,9 @@ h1.catalog-title {
   grid-column: 1 / -1;
   -ms-grid-row: 1;
   grid-row: 1;
-  padding: 14px 40px;
   width: 100%;
   max-width: 110px;
+  padding: 14px 40px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2089,6 +2082,7 @@ h1.catalog-title {
   background-color: #f2f2f2;
   border-radius: 4px;
   z-index: 1;
+  appearance: textfield;
   -webkit-appearance: none;
   -moz-appearance: textfield;
 }
