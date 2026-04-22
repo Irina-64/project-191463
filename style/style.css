@@ -293,10 +293,7 @@ input[type="number"] {
 
 .link-current {
   position: relative;
-}
-
-.navigation-link ~.link-current:hover {
-  color: inherit;
+  cursor: default;
 }
 
 .link-current::before {
