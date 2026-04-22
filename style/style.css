@@ -1515,15 +1515,15 @@ h1.catalog-title {
   border-radius: 4px;
 }
 
-.pagination-link:hover:not(.pagination-link_special) {
+.pagination-link:hover:not(.pagination-link-special) {
   background-color: #68a2ca;
 }
 
-.pagination-link:focus:not(.pagination-link_special) {
+.pagination-link:focus:not(.pagination-link-special) {
   background-color: #68a2ca;
 }
 
-.pagination-link:active:not(.pagination-link_special) {
+.pagination-link:active:not(.pagination-link-special) {
   color: rgba(255, 255, 255, 0.3);
   background-color: #82b3d3;
 }
